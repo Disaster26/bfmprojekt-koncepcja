@@ -32,6 +32,6 @@ s=s.replace('{{CARDS}}','\n'.join(cards)).replace('{{LISTA}}','\n'.join(lis)).re
 s=s.replace('{{DATA}}',json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</',r'<\/'))
 s=s.replace('{{BADGE_STYLE}}',open('badge_style.part',encoding='utf-8').read().replace('<style>','').replace('</style>',''))
 s=s.replace('{{BADGE_LINK}}',open('badge_link.part',encoding='utf-8').read().strip())
-s=s.replace(' 2013 ',' - ')
+s=s.replace(' – ',' - ')
 open('index.html','w',encoding='utf-8',newline='\n').write(s)
 print('ok',len(ob),len(li),len(s))
