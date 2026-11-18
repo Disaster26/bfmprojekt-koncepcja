@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BFM Projekt - biuro projektowe instalacji w Krakowie</title>
+<meta name="description" content="BFM Projekt Sp. z o.o. - wielobranżowe biuro projektowe instalacji sanitarnych i elektrycznych w Krakowie. Biurowce, galerie handlowe, hotele i osiedla, od 2006 roku.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23B30D11'/%3E%3Cpath d='M9 26V12a6 6 0 0 1 6-6h8' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/saira-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1024.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="(max-width:760px) 220vw, 100vw" fetchpriority="high">
+<style>
+@font-face{font-family:Saira;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Saira;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0104-0107,U+010C-010D,U+0118-011B,U+0141-0144,U+0158-0161,U+016E-016F,U+0179-017E}
+:root{--b:#FFFFFF;--s:#EEF0F2;--g:#1D2023;--r:#B30D11;--t:#1D2023;--m:#535A62;--l:#D3D7DC;--w:min(92vw,1720px);--hh:60px;--rad:12px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hh) + 8px)}
+body{margin:0;background:var(--b);color:var(--t);font:400 17px/1.6 Archivo,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Saira,Archivo,Arial,sans-serif;font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+.wrap{width:var(--w);margin:0 auto}
+:focus-visible{outline:2px solid var(--r);outline-offset:3px}
+/* naglowek */
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--l)}
+.top .wrap{height:calc(var(--hh) - 1px);display:flex;align-items:center;gap:24px}
+.logo{display:block;flex:none}
+.logo img{height:30px;width:auto}
+.menu{display:flex;gap:30px;margin-left:auto;font-weight:500;font-size:16px}
+.menu a{text-decoration:none;padding:8px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-bottom-color:var(--r)}
+.tel{font-family:Saira,Arial,sans-serif;font-weight:600;font-size:18px;text-decoration:none;white-space:nowrap;padding:10px 0}
+.tel span{color:var(--m);font-weight:500;margin-right:6px;font-family:Archivo,Arial,sans-serif;font-size:15px}
+.burger{display:none}
+@media (min-width:1000px){:root{--hh:76px}.logo img{height:38px}.tel{margin-left:20px;padding-left:28px;border-left:1px solid var(--l)}}
+@media (max-width:999px){
+ .menu{display:none;position:absolute;left:0;right:0;top:var(--hh);background:#fff;border-bottom:1px solid var(--l);flex-direction:column;gap:0;padding:8px 4vw 18px;font-size:19px}
+ .menu.otw{display:flex}
+ .menu a{padding:13px 0;border-bottom:1px solid var(--l)}
+ .menu a:last-child{border-bottom:0}
+ .tel{margin-left:auto;font-size:17px}
+ .tel span{display:none}
+ .burger{display:flex;flex-direction:column;justify-content:center;gap:6px;width:46px;height:46px;margin-right:-8px;padding:0 10px;background:none;border:0;cursor:pointer}
+ .burger i{display:block;height:2px;background:var(--g)}
+ .burger[aria-expanded=true] i:nth-child(2){opacity:0}
+ .burger[aria-expanded=true] i:first-child{transform:translateY(8px) rotate(45deg)}
+ .burger[aria-expanded=true] i:last-child{transform:translateY(-8px) rotate(-45deg)}
+}
+/* motyw: trasa instalacji - kolano jak luk litery F w logo */
+.kol{position:relative;padding-left:30px}
+.kol::before{content:"";position:absolute;left:0;top:.08em;width:18px;height:.62em;border-left:3px solid var(--r);border-bottom:3px solid var(--r);border-bottom-left-radius:var(--rad)}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;background:#2a3138;isolation:isolate}
+.hero>picture img,.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:34% 40%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,21,24,0) 30%,rgba(18,21,24,.55) 62%,rgba(18,21,24,.86) 100%)}
+.hero .wrap{padding:40px 0 34px}
+.htxt{position:relative;padding-left:34px;max-width:980px}
+.htxt::before{content:"";position:absolute;left:0;top:.35em;bottom:27px;width:20px;border-left:3px solid var(--r);border-bottom:3px solid var(--r);border-bottom-left-radius:var(--rad)}
+.hero h1{font-size:clamp(29px,7.6vw,38px);max-width:22ch;text-wrap:balance}
+.lead{margin:16px 0 0;font-size:17px;line-height:1.55;max-width:60ch;color:rgba(255,255,255,.92)}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 24px;background:var(--r);color:#fff;font-family:Saira,Arial,sans-serif;font-weight:600;font-size:18px;text-decoration:none;border:0;border-radius:2px;cursor:pointer}
+.btn:hover{background:#9A0B0F}
+.btn svg{width:18px;height:18px;flex:none}
+.hero .btn{margin-top:28px}
+@media (max-width:419px){.btn .dl{display:none}}
+.podpis{margin:22px 0 0 34px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.78)}
+@media (min-width:760px){.hero::after{background:linear-gradient(90deg,rgba(18,21,24,.62) 0%,rgba(18,21,24,.30) 45%,rgba(18,21,24,0) 70%),linear-gradient(180deg,rgba(18,21,24,0) 35%,rgba(18,21,24,.5) 70%,rgba(18,21,24,.8) 100%)}.hero .wrap{padding:64px 0 48px}.hero h1{font-size:clamp(42px,4.1vw,76px)}.lead{font-size:clamp(18px,1.25vw,22px);margin-top:22px}.hero .btn{margin-top:34px}.htxt{padding-left:44px}.htxt::before{width:28px}.podpis{margin-left:44px}}
+@media (max-height:700px) and (max-width:759px){.hero h1{font-size:clamp(26px,7vw,31px)}.lead{font-size:16px;margin-top:12px}.hero .wrap{padding:24px 0 22px}.podpis{margin-top:16px}}
+/* sekcje */
+.sek{padding:72px 0}
+.sek h2{font-size:clamp(30px,3.2vw,52px)}
+.glowa{display:grid;gap:18px 6vw;margin-bottom:40px}
+.glowa p{margin:0;color:var(--m);max-width:62ch}
+@media (min-width:1000px){.sek{padding:110px 0}.glowa{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end;margin-bottom:56px}}
+/* portfolio */
+.siatka{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}
+.siatka li{min-width:0;display:flex}
+.karta{display:flex;flex-direction:column;width:100%;padding:0;margin:0;border:0;background:none;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.karta .foto{display:block;aspect-ratio:4/3;background:var(--s);overflow:hidden}
+.karta img{width:100%;height:100%;object-fit:cover}
+.tab{display:flex;flex-direction:column;flex:1;border:1px solid var(--l);border-top:0}
+.nz{flex:1}
+.nz{display:block;padding:9px 10px 8px;font-family:Saira,Arial,sans-serif;font-weight:600;font-size:16px;line-height:1.2;border-bottom:1px solid var(--l)}
+.mt{display:grid;grid-template-columns:minmax(0,1fr) auto;font-size:13px;line-height:1.3;color:var(--m)}
+.mt span{padding:7px 10px;min-width:0}
+.mt span+span{border-left:1px solid var(--l);white-space:nowrap}
+.karta:hover .nz{color:var(--r)}
+.karta:hover .tab{border-color:#B9BEC4}
+.siatka:not(.wsz) li:nth-child(n+13){display:none}
+.wiecej{margin-top:36px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+.btn2{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 22px;border:2px solid var(--g);background:#fff;color:var(--g);font-family:Saira,Arial,sans-serif;font-weight:600;font-size:17px;cursor:pointer;border-radius:2px}
+.btn2:hover{border-color:var(--r);color:var(--r)}
+.lista{margin-top:44px;border-top:1px solid var(--l)}
+.lista summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-family:Saira,Arial,sans-serif;font-weight:600;font-size:19px}
+.lista summary::-webkit-details-marker{display:none}
+.lista summary::after{content:"+";font-size:28px;line-height:1;color:var(--r);font-weight:500}
+.lista[open] summary::after{content:"\2212"}
+.lista ul{list-style:none;margin:0;padding:0 0 10px;display:grid;gap:0 4vw}
+.lista li{padding:14px 0;border-top:1px solid var(--l);font-size:15.5px;line-height:1.5;color:var(--m)}
+.lista li b{display:block;color:var(--t);font-weight:600;font-size:16.5px}
+@media (min-width:760px){.siatka{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 22px}.nz{font-size:18px;padding:11px 14px 10px}.mt{font-size:14.5px}.mt span{padding:8px 14px}.lista ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.siatka{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 26px}}
+@media (min-width:1800px){.siatka{grid-template-columns:repeat(5,minmax(0,1fr))}.siatka:not(.wsz) li:nth-child(n+13){display:block}.siatka:not(.wsz) li:nth-child(n+16){display:none}.lista ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:2400px){.siatka{grid-template-columns:repeat(6,minmax(0,1fr))}.siatka:not(.wsz) li:nth-child(n+16){display:block}.siatka:not(.wsz) li:nth-child(n+19){display:none}}
+/* ciemna sekcja: pion z odejsciami */
+.ciem{background:var(--g);color:#fff}
+.ciem p{color:#C9CED4}
+.ciem .glowa p{color:#C9CED4}
+.zak{display:grid;gap:48px 6vw}
+.pion{list-style:none;margin:0;padding:0}
+.pion li{position:relative;padding:11px 0 11px 44px;font-size:18px;line-height:1.4}
+.pion li::before{content:"";position:absolute;left:0;top:0;width:28px;height:calc(11px + .7em);border-left:3px solid var(--r);border-bottom:3px solid var(--r);border-bottom-left-radius:var(--rad)}
+.pion li:not(:last-child)::after{content:"";position:absolute;left:0;top:0;bottom:0;border-left:3px solid var(--r)}
+.etapy{margin-top:34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #3A4046;border-left:1px solid #3A4046}
+.etapy div{padding:16px 16px;border-right:1px solid #3A4046;border-bottom:1px solid #3A4046;font-size:15.5px;line-height:1.35}
+.etapy b{display:block;font-family:Saira,Arial,sans-serif;font-weight:600;font-size:17px;color:#fff;margin-bottom:2px}
+.etapy span{color:#AEB4BB}
+.ciem h3{font-size:22px;margin:0 0 14px}
+@media (min-width:1000px){.zak{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}.etapy{grid-template-columns:repeat(3,minmax(0,1fr))}.pion li{font-size:19px}}
+/* firma */
+.firma{background:var(--s)}
+.fgrid{display:grid;gap:40px 6vw;align-items:start}
+.fgrid p{margin:0 0 16px;max-width:66ch}
+.dane{margin:28px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);border-top:1px solid #C9CED4;font-size:15.5px}
+.dane dt,.dane dd{margin:0;padding:11px 0;border-bottom:1px solid #C9CED4}
+.dane dt{color:var(--m);padding-right:24px}
+.fzdj img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.fzdj figcaption{margin-top:10px;font-size:14px;color:var(--m)}
+@media (min-width:1000px){.fgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+/* kontakt */
+.kgrid{display:grid;gap:44px 6vw;align-items:start}
+.osoby{list-style:none;margin:0;padding:0}
+.osoby li{position:relative;padding:14px 0 26px 44px}
+.osoby li::before{content:"";position:absolute;left:0;top:0;width:28px;height:30px;border-left:3px solid var(--r);border-bottom:3px solid var(--r);border-bottom-left-radius:var(--rad)}
+.osoby li:not(:last-child)::after{content:"";position:absolute;left:0;top:0;bottom:0;border-left:3px solid var(--r)}
+.osoby h3{font-size:22px}
+.osoby .f{display:block;color:var(--m);font-size:15.5px;margin:2px 0 6px}
+.osoby a{font-size:16px;text-decoration:none;border-bottom:1px solid #B9BEC4;overflow-wrap:anywhere}
+.osoby a:hover{color:var(--r);border-color:var(--r)}
+.biuro{border:1px solid var(--l)}
+.biuro>div{padding:20px 22px;border-bottom:1px solid var(--l)}
+.biuro>div:last-child{border-bottom:0}
+.biuro .et{display:block;font-size:14px;color:var(--m);margin-bottom:4px}
+.biuro .duzy{font-family:Saira,Arial,sans-serif;font-weight:600;font-size:clamp(24px,2.2vw,32px);text-decoration:none;line-height:1.2}
+.biuro a{text-decoration:none}
+.biuro a:hover{color:var(--r)}
+.biuro p{margin:0}
+.form{margin-top:30px}
+.form h3{font-size:22px;margin-bottom:14px}
+.form label{display:block;font-size:14.5px;color:var(--m);margin:0 0 14px}
+.form input,.form textarea{display:block;width:100%;margin-top:5px;padding:12px 13px;border:1px solid #B9BEC4;border-radius:2px;font:inherit;font-size:16px;color:var(--t);background:#fff}
+.form textarea{min-height:110px;resize:vertical}
+.form input:focus,.form textarea:focus{outline:2px solid var(--r);outline-offset:0;border-color:var(--r)}
+.form .msg{margin:14px 0 0;font-size:15px;color:var(--t)}
+.mapa{height:340px;background:var(--s);border:1px solid var(--l);display:flex;align-items:center;justify-content:center;color:var(--m);text-align:center;padding:16px}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+@media (min-width:1000px){.kgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"o p" "m p"}.osoby{grid-area:o}.prawa{grid-area:p}.mapa{grid-area:m;height:400px}.osoby h3{font-size:26px}.osoby li{padding:16px 0 30px 48px}.osoby .f{font-size:16.5px}.osoby a{font-size:17px}}
+/* stopka */
+.stopka{background:var(--g);color:#C3C8CE;font-size:15px;padding:48px 0 26px}
+.sgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px 6vw}
+.sgrid img{height:30px;width:auto;margin-bottom:12px}
+.stopka p{margin:0;line-height:1.6}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.sdol{margin-top:34px;padding-top:18px;border-top:1px solid #3A4046;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;align-items:center;font-size:14px;line-height:1.4}
+.sdol .wylinka-badge{font-size:1em;opacity:1}
+.sdol .wylinka-badge svg{width:1.15em;height:1.15em}
+@media (max-width:600px){.sgrid .s1{grid-column:1/-1}}
+@media (min-width:1000px){.sgrid{grid-template-columns:1.3fr 1fr 1fr 1fr}}
+/* karta obiektu */
+dialog{padding:0;border:0;max-width:none;max-height:none;width:min(1500px,94vw);height:min(920px,92vh);background:#fff;color:var(--t)}
+dialog::backdrop{background:rgba(18,21,24,.82)}
+.dk{display:grid;grid-template-rows:auto minmax(0,1fr);height:100%}
+.dgora{display:flex;align-items:center;gap:12px;padding:10px 12px 10px 20px;border-bottom:1px solid var(--l)}
+.dgora h2{font-size:clamp(20px,2vw,28px);margin-right:auto}
+.dnav{display:flex;gap:8px}
+.dnav button{min-height:44px;padding:0 14px;border:1px solid var(--l);background:#fff;font:600 15px Saira,Arial,sans-serif;color:var(--t);cursor:pointer;border-radius:2px}
+.dnav button:hover{border-color:var(--g)}
+.dnav .zam{background:var(--g);color:#fff;border-color:var(--g)}
+.dsr{display:grid;overflow:auto}
+.galeria{display:grid;gap:10px;padding:16px}
+.galeria img{width:100%;height:auto;background:var(--s)}
+.dtab{padding:16px 20px 28px}
+.dtab dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);border-top:1px solid var(--l);font-size:15.5px}
+.dtab dt,.dtab dd{margin:0;padding:11px 0;border-bottom:1px solid var(--l)}
+.dtab dt{color:var(--m);padding-right:22px}
+.dtab p{font-size:14px;color:var(--m);margin:16px 0 0}
+@media (min-width:1000px){.dsr{grid-template-columns:minmax(0,1.7fr) minmax(320px,1fr);overflow:hidden}.galeria{overflow:auto;padding:20px}.dtab{overflow:auto;padding:24px 28px;border-left:1px solid var(--l)}}
+@media (max-width:999px){dialog{width:100vw;height:100%;max-height:100dvh}.galeria{grid-auto-flow:column;grid-auto-columns:88%;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 12px;padding:12px}.galeria img{scroll-snap-align:start;height:100%;max-height:56vh;object-fit:cover}.dnav .np span{display:none}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="BFM Projekt - początek strony"><img src="img/logo-grafit.webp" width="326" height="114" alt="BFM Projekt"></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#obiekty">Obiekty</a>
+   <a href="#zakres">Co projektujemy</a>
+   <a href="#firma">Firma</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48126180860"><span>tel.</span>12 618 08 60</a>
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <img src="img/hero-1024.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="(max-width:760px) 220vw, 100vw" width="2000" height="1333" alt="Przeszklony budynek biurowy Oknoplast w Ochmanowie" fetchpriority="high" decoding="async">
+ <div class="wrap">
+  <div class="htxt">
+   <h1>Projektujemy instalacje dużych budynków - biuro projektowe w Krakowie</h1>
+   <p class="lead">Wentylacja, klimatyzacja, ogrzewanie, elektryka, woda i ochrona przeciwpożarowa w biurowcach, galeriach handlowych, hotelach i osiedlach. Od koncepcji po nadzór autorski.</p>
+   <a class="btn" href="#obiekty"><span>Zobacz <span class="dl">zaprojektowane </span>obiekty</span><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 2v6a5 5 0 0 0 5 5h8m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+  </div>
+  <p class="podpis">Na zdjęciu: siedziba Oknoplast w Ochmanowie, projekt budowlany i wykonawczy instalacji 2015-2017.</p>
+ </div>
+</section>
+
+<section class="sek" id="obiekty">
+ <div class="wrap">
+  <div class="glowa">
+   <h2 class="kol">Zaprojektowane obiekty</h2>
+   <p>Na zdjęciach widać architekturę, a nasza praca jest w środku budynku: instalacje sanitarne i elektryczne. Po kliknięciu obiektu zobaczą Państwo zakres prac, powierzchnię i architekta.</p>
+  </div>
+  <ul class="siatka" id="siatka">
+   <li><button class="karta" type="button" data-i="0" aria-haspopup="dialog"><span class="foto"><img src="img/k/309-480.webp" srcset="img/k/309-480.webp 480w, img/k/309-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Quorum, Wrocław"></span><span class="tab"><span class="nz">Quorum</span><span class="mt"><span>Wrocław</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="1" aria-haspopup="dialog"><span class="foto"><img src="img/k/310-480.webp" srcset="img/k/310-480.webp 480w, img/k/310-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="WIMA, Łódź"></span><span class="tab"><span class="nz">WIMA</span><span class="mt"><span>Łódź</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="2" aria-haspopup="dialog"><span class="foto"><img src="img/k/311-480.webp" srcset="img/k/311-480.webp 480w, img/k/311-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Aparthotel, Mielno"></span><span class="tab"><span class="nz">Aparthotel</span><span class="mt"><span>Mielno</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="3" aria-haspopup="dialog"><span class="foto"><img src="img/k/312-480.webp" srcset="img/k/312-480.webp 480w, img/k/312-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Holiday Inn Express, Lublin"></span><span class="tab"><span class="nz">Holiday Inn Express</span><span class="mt"><span>Lublin</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="4" aria-haspopup="dialog"><span class="foto"><img src="img/k/313-480.webp" srcset="img/k/313-480.webp 480w, img/k/313-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Osiedle Link, Kraków"></span><span class="tab"><span class="nz">Osiedle Link</span><span class="mt"><span>Kraków</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="5" aria-haspopup="dialog"><span class="foto"><img src="img/k/314-480.webp" srcset="img/k/314-480.webp 480w, img/k/314-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Global Office Park, Katowice"></span><span class="tab"><span class="nz">Global Office Park</span><span class="mt"><span>Katowice</span><span>2020-2023</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="6" aria-haspopup="dialog"><span class="foto"><img src="img/k/315-480.webp" srcset="img/k/315-480.webp 480w, img/k/315-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Oławska Tower, Wrocław"></span><span class="tab"><span class="nz">Oławska Tower</span><span class="mt"><span>Wrocław</span><span>od 2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="7" aria-haspopup="dialog"><span class="foto"><img src="img/k/316-480.webp" srcset="img/k/316-480.webp 480w, img/k/316-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Chmielna 89, Warszawa"></span><span class="tab"><span class="nz">Chmielna 89</span><span class="mt"><span>Warszawa</span><span>2019-2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="8" aria-haspopup="dialog"><span class="foto"><img src="img/k/317-480.webp" srcset="img/k/317-480.webp 480w, img/k/317-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Fabryka Kart, Kraków"></span><span class="tab"><span class="nz">Fabryka Kart</span><span class="mt"><span>Kraków</span><span>2015-2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="9" aria-haspopup="dialog"><span class="foto"><img src="img/k/318-480.webp" srcset="img/k/318-480.webp 480w, img/k/318-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Oknoplast, Ochmanów k. Krakowa"></span><span class="tab"><span class="nz">Oknoplast</span><span class="mt"><span>Ochmanów k. Krakowa</span><span>2015-2017</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="10" aria-haspopup="dialog"><span class="foto"><img src="img/k/319-480.webp" srcset="img/k/319-480.webp 480w, img/k/319-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Metal Service Center, Zabrze"></span><span class="tab"><span class="nz">Metal Service Center</span><span class="mt"><span>Zabrze</span><span>2018-2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="11" aria-haspopup="dialog"><span class="foto"><img src="img/k/304-480.webp" srcset="img/k/304-480.webp 480w, img/k/304-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Equal Business Park, Kraków"></span><span class="tab"><span class="nz">Equal Business Park</span><span class="mt"><span>Kraków</span><span>2016-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="12" aria-haspopup="dialog"><span class="foto"><img src="img/k/306-480.webp" srcset="img/k/306-480.webp 480w, img/k/306-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Carbon Tower, Wrocław"></span><span class="tab"><span class="nz">Carbon Tower</span><span class="mt"><span>Wrocław</span><span>2016-2019</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="13" aria-haspopup="dialog"><span class="foto"><img src="img/k/305-480.webp" srcset="img/k/305-480.webp 480w, img/k/305-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Diamentum Office, Wrocław"></span><span class="tab"><span class="nz">Diamentum Office</span><span class="mt"><span>Wrocław</span><span>2016-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="14" aria-haspopup="dialog"><span class="foto"><img src="img/k/301-480.webp" srcset="img/k/301-480.webp 480w, img/k/301-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Libero, Katowice"></span><span class="tab"><span class="nz">Libero</span><span class="mt"><span>Katowice</span><span>2015-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="15" aria-haspopup="dialog"><span class="foto"><img src="img/k/303-480.webp" srcset="img/k/303-480.webp 480w, img/k/303-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Podium Park, Kraków"></span><span class="tab"><span class="nz">Podium Park</span><span class="mt"><span>Kraków</span><span>od 2015</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="16" aria-haspopup="dialog"><span class="foto"><img src="img/k/302-480.webp" srcset="img/k/302-480.webp 480w, img/k/302-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Imperial, Kraków"></span><span class="tab"><span class="nz">Imperial</span><span class="mt"><span>Kraków</span><span>2016-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="17" aria-haspopup="dialog"><span class="foto"><img src="img/k/300-480.webp" srcset="img/k/300-480.webp 480w, img/k/300-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Art City, Kraków"></span><span class="tab"><span class="nz">Art City</span><span class="mt"><span>Kraków</span><span>2014-2020</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="18" aria-haspopup="dialog"><span class="foto"><img src="img/k/297-480.webp" srcset="img/k/297-480.webp 480w, img/k/297-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Comarch, Kraków"></span><span class="tab"><span class="nz">Comarch</span><span class="mt"><span>Kraków</span><span>2015-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="19" aria-haspopup="dialog"><span class="foto"><img src="img/k/298-480.webp" srcset="img/k/298-480.webp 480w, img/k/298-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Principio, Kraków"></span><span class="tab"><span class="nz">Principio</span><span class="mt"><span>Kraków</span><span>2014-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="20" aria-haspopup="dialog"><span class="foto"><img src="img/k/299-480.webp" srcset="img/k/299-480.webp 480w, img/k/299-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Sąd Rejonowy, Nowy Sącz"></span><span class="tab"><span class="nz">Sąd Rejonowy</span><span class="mt"><span>Nowy Sącz</span><span>2015-2018</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="21" aria-haspopup="dialog"><span class="foto"><img src="img/k/282-480.webp" srcset="img/k/282-480.webp 480w, img/k/282-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Korona, Kielce"></span><span class="tab"><span class="nz">Korona</span><span class="mt"><span>Kielce</span><span>2010-2012</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="22" aria-haspopup="dialog"><span class="foto"><img src="img/k/286-480.webp" srcset="img/k/286-480.webp 480w, img/k/286-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Browar Lubicz, Kraków"></span><span class="tab"><span class="nz">Browar Lubicz</span><span class="mt"><span>Kraków</span><span>2011-2014</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="23" aria-haspopup="dialog"><span class="foto"><img src="img/k/287-480.webp" srcset="img/k/287-480.webp 480w, img/k/287-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Bonarka, Kraków"></span><span class="tab"><span class="nz">Bonarka</span><span class="mt"><span>Kraków</span><span>2007-2009</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="24" aria-haspopup="dialog"><span class="foto"><img src="img/k/288-480.webp" srcset="img/k/288-480.webp 480w, img/k/288-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Felicity, Lublin"></span><span class="tab"><span class="nz">Felicity</span><span class="mt"><span>Lublin</span><span>2012-2014</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="25" aria-haspopup="dialog"><span class="foto"><img src="img/k/289-480.webp" srcset="img/k/289-480.webp 480w, img/k/289-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Millenium Hall, Rzeszów"></span><span class="tab"><span class="nz">Millenium Hall</span><span class="mt"><span>Rzeszów</span><span>2010-2012</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="26" aria-haspopup="dialog"><span class="foto"><img src="img/k/290-480.webp" srcset="img/k/290-480.webp 480w, img/k/290-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Gemini Park, Tarnów"></span><span class="tab"><span class="nz">Gemini Park</span><span class="mt"><span>Tarnów</span><span>2009-2010</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="27" aria-haspopup="dialog"><span class="foto"><img src="img/k/291-480.webp" srcset="img/k/291-480.webp 480w, img/k/291-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Focus Park, Piotrków Trybunalski"></span><span class="tab"><span class="nz">Focus Park</span><span class="mt"><span>Piotrków Trybunalski</span><span>2007-2009</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="28" aria-haspopup="dialog"><span class="foto"><img src="img/k/292-480.webp" srcset="img/k/292-480.webp 480w, img/k/292-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="TIM, Siechnice (Wrocław)"></span><span class="tab"><span class="nz">TIM</span><span class="mt"><span>Siechnice (Wrocław)</span><span>2007-2008</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="29" aria-haspopup="dialog"><span class="foto"><img src="img/k/293-480.webp" srcset="img/k/293-480.webp 480w, img/k/293-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Interkrąż, Trzyciąż"></span><span class="tab"><span class="nz">Interkrąż</span><span class="mt"><span>Trzyciąż</span><span>2011-2013</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="30" aria-haspopup="dialog"><span class="foto"><img src="img/k/294-480.webp" srcset="img/k/294-480.webp 480w, img/k/294-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Ekowtór, Wilkowice"></span><span class="tab"><span class="nz">Ekowtór</span><span class="mt"><span>Wilkowice</span><span>-</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="31" aria-haspopup="dialog"><span class="foto"><img src="img/k/295-480.webp" srcset="img/k/295-480.webp 480w, img/k/295-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Prilesie, Mińsk (Białoruś)"></span><span class="tab"><span class="nz">Prilesie</span><span class="mt"><span>Mińsk (Białoruś)</span><span>-</span></span></span></button></li>
+   <li><button class="karta" type="button" data-i="32" aria-haspopup="dialog"><span class="foto"><img src="img/k/307-480.webp" srcset="img/k/307-480.webp 480w, img/k/307-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="Tischnera Office, Kraków"></span><span class="tab"><span class="nz">Tischnera Office</span><span class="mt"><span>Kraków</span><span>2016-2020</span></span></span></button></li>
+  </ul>
+  <div class="wiecej"><button class="btn2" type="button" id="pokaz">Pokaż wszystkie obiekty (33)</button></div>
+  <details class="lista">
+   <summary>Pełna lista wcześniejszych realizacji (30)</summary>
+   <ul>
+    <li><b>Bonarka City Center Kraków</b>galeria handlowa, 240 000 m²; projekt wykonawczy, nadzór autorski; otwarcie: 2009; architekt: BOSE International, IMB Asymetria</li>
+    <li><b>Focus Park Gliwice</b>galeria handlowa, 130 000 m²; projekt budowlany, projekt przetargowy; architekt: MOFO Architekci</li>
+    <li><b>Focus Mall Piotrków Trybunalski</b>galeria handlowa, 85 000 m²; projekt budowlany, projekt przetargowy, nadzór autorski; otwarcie: 2009; architekt: MOFO Architekci</li>
+    <li><b>Focus Park Jelenia Góra</b>galeria handlowa, 50 000 m²; projekt budowlany, projekt przetargowy; architekt: MOFO Architekci</li>
+    <li><b>Gemini Park Tarnów</b>galeria handlowa, 78 000 m²; projekt budowlany zamienny, projekt wykonawczy, nadzór autorski; otwarcie: 2010; architekt: MOFO Architekci</li>
+    <li><b>Millenium Hall Rzeszów</b>galeria handlowa, 100 000 m²; projekt budowlany zamienny, projekt wykonawczy, nadzór autorski; otwarcie: październik 2011; architekt: Studio Archi 5</li>
+    <li><b>Korona Kielce</b>galeria handlowa, 85 000 m²; projekt budowlany, projekt wykonawczy, nadzór autorski, projekty wykonawcze: Polonez Plus, Elpomiar; otwarcie: 2012; architekt: BOSE International</li>
+    <li><b>Echo Veneda Łomża</b>galeria handlowa, 40 000 m²; projekt budowlany, projekt przetargowy; otwarcie: 2012; architekt: MĄKA-SOJKA Architekci</li>
+    <li><b>Echo Olimpia Bełchatów</b>galeria handlowa, 40 000 m²; projekt budowlany, projekt przetargowy; otwarcie: 2012; architekt: MOFO Architekci</li>
+    <li><b>Felicity Lublin</b>galeria handlowa, 145 000 m²; projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór autorski; otwarcie: 2014; architekt: MOFO Architekci</li>
+    <li><b>Makro Lublin – przebudowa</b>hurtownia, 15 000 m²; projekt budowlany, projekt wykonawczy, nadzór autorski; otwarcie: 2008</li>
+    <li><b>Makro Kraków II</b>hurtownia, 11 000 m²; projekt budowlany, projekt wykonawczy, nadzór autorski; otwarcie: 2011; architekt: NOW Biuro Architektoniczne</li>
+    <li><b>Tim Siechnice k/Wrocławia</b>siedziba firmy i magazyn centralny, 15 000 m²; projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór autorski; otwarcie: 2008;; architekt: APA Zalewski Bubak</li>
+    <li><b>Intersport Kraków</b>siedziba firmy i magazyn centralny, 4 000 m²; projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór autorski; otwarcie: 2008; architekt: APA BAZA Architekci</li>
+    <li><b>Onyx Kraków</b>budynek biurowy, 7 500 m²; projekt budowlany, projekt przetargowy, projekt wykonawczy; otwarcie: 2008; architekt: MOFO Architekci</li>
+    <li><b>Browar Lubicz Kraków</b>zespół budynków mieszkaniowych i usługowych; projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór na budowie – etap A; otwarcie etapu A: 2014; architekt: MOFO Architekci</li>
+    <li><b>Apartamentowiec Tętnowski Development Kraków</b>budynek mieszkalny, 9 500 m²; projekt budowlany, projekt wykonawczy; architekt: APA Zalewski Bubak</li>
+    <li><b>Centrum Gminy Rytro</b>zespół budynków; projekt budowlany, projekt wykonawczy; architekt: STUDIO ARCHI 5</li>
+    <li><b>Muzeum Ordynariatu Wojska Polskiego Warszawa</b>projekt budowlany, projekt wykonawczy; otwarcie: 2011; architekt: Studio Architektoniczne W. Obtułowicz</li>
+    <li><b>Franowo Poznań</b>park handlowy, 14 000 m²; projekt budowlany, projekt przetargowy, nadzór autorski; otwarcie: 2013; architekt: BAZUKA Studio</li>
+    <li><b>Ekotwór w Wilkowicach</b>siedziba firmy oraz sortownia odpadów, 4 200 m²; projekt budowlany, projekt wykonawczy; architekt: APA Zalewski Bubak</li>
+    <li><b>Mpec Kraków</b>modernizacja głównego budynku, 4 500 m²; projekt budowlany, projekt wykonawczy; architekt: Rafał Kuliński Pracownia Architektoniczna</li>
+    <li><b>Empu w Krakowie</b>magazyn odbioru towarów IKEA, 5 300 m²; projekt budowlany, projekt wykonawczy; architekt: Artur Jasiński i Wspólnicy</li>
+    <li><b>Prilesie Mińsk Białoruś</b>centrum logistyczne, 25 000 m²; projekt budowlany; architekt: APA Zalewski Bubak</li>
+    <li><b>Interkrąż Trzyciąż</b>siedziba firmy i hala produkcyjna, 7 500 m²; projekt budowlany, projekt wykonawczy; architekt: APA Zalewski Bubak</li>
+    <li><b>Boat w Krakowie</b>budynek biurowy, 1 900 m²; projekt budowlany, projekt wykonawczy; architekt: APA Zalewski Bubak</li>
+    <li><b>Wola Park</b>galeria handlowa – przebudowa, 15 000 m²; projekt budowlany, projekt przetargowy; nadzór autorski; architekt: BAZUKA Studio</li>
+    <li><b>Budynek usługowo-mieszkaniowy w Krakowie</b>8 800 m²; projekt budowlany; architekt: Artur Jasiński i Wspólnicy</li>
+    <li><b>Bronowice Kraków</b>galeria handlowa, 150 000 m²; projekt wykonawczy instalacji hvac i sanitarnych, nadzór autorski; otwarcie: listopad 2013; architekt: BRK</li>
+    <li><b>Echo Sudecka Jelenia Góra</b>galeria handlowa, 40 000 m²; projekt budowlany i przetargowy instalacji hvac; architekt: Archilog</li>
+   </ul>
+  </details>
+ </div>
+</section>
+
+<section class="sek ciem" id="zakres">
+ <div class="wrap zak">
+  <div>
+   <h2 class="kol">Projektujemy to, dzięki czemu budynek działa</h2>
+   <p style="margin:22px 0 0;max-width:60ch">Specjalizujemy się w dużych obiektach komercyjnych: galeriach handlowych, budynkach biurowych i osiedlach mieszkaniowych. Wiele obiektów zaprojektowanych przez nas zostało wybudowanych i przekazanych do użytkowania.</p>
+   <div class="etapy">
+    <div><b>Koncepcja</b><span>pierwsze założenia instalacji</span></div>
+    <div><b>Projekt budowlany</b><span>także zamienny</span></div>
+    <div><b>Projekt przetargowy</b><span>do wyboru wykonawcy</span></div>
+    <div><b>Projekt wykonawczy</b><span>komplet dla budowy</span></div>
+    <div><b>Nadzór autorski</b><span>obsługa w trakcie budowy</span></div>
+    <div><b>Doradztwo</b><span>ocena i optymalizacja dokumentacji</span></div>
+   </div>
+  </div>
+  <div>
+   <h3>Projekty instalacji</h3>
+   <ul class="pion">
+    <li>wentylacji, klimatyzacji i wentylacji pożarowej</li>
+    <li>ogrzewczych i chłodniczych</li>
+    <li>elektroenergetycznych</li>
+    <li>słaboprądowych, automatyki i BMS</li>
+    <li>wodno-kanalizacyjnych</li>
+    <li>przeciwpożarowych wodnych</li>
+    <li>gazowych</li>
+    <li>technologicznych</li>
+    <li>sieci, przyłączy i instalacji zewnętrznych</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sek firma" id="firma">
+ <div class="wrap fgrid">
+  <div>
+   <h2 class="kol" style="margin-bottom:26px">Wielobranżowe biuro projektów instalacyjnych</h2>
+   <p>BFM Projekt działa od 2006 roku. Zespół projektowy tworzą doświadczeni projektanci branży elektrycznej i sanitarnej. Współpracujemy z inwestorami, architektami i wykonawcami - od pierwszej koncepcji, przez projekty budowlane, przetargowe i wykonawcze, po obsługę inwestycji w trakcie budowy.</p>
+   <p>Doradzamy także na etapie przetargu: oceniamy dokumentację i szukamy rozwiązań, które obniżają koszty inwestycji i późniejszej eksploatacji budynku.</p>
+   <dl class="dane">
+    <dt>Firma</dt><dd>BFM Projekt Sp. z o.o.</dd>
+    <dt>Od roku</dt><dd>2006</dd>
+    <dt>Branże</dt><dd>sanitarna i elektryczna</dd>
+    <dt>Biuro</dt><dd>ul. Wielicka 113/LU2, 30-552 Kraków</dd>
+   </dl>
+  </div>
+  <figure class="fzdj" style="margin:0">
+   <img src="img/o/317-1.webp" width="1020" height="800" loading="lazy" decoding="async" alt="Biurowiec Fabryka Kart w Krakowie">
+   <figcaption>Fabryka Kart, Kraków - projekt budowlany i wykonawczy instalacji.</figcaption>
+  </figure>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap">
+  <div class="glowa">
+   <h2 class="kol">Kontakt</h2>
+   <p>Biuro mieści się przy ul. Wielickiej 113 w Krakowie. W pobliżu są przystanki tramwajowy i autobusowy "Kabel" oraz dworzec Kraków Płaszów.</p>
+  </div>
+  <div class="kgrid">
+   <ul class="osoby">
+    <li><h3>Mariusz Bigaj</h3><span class="f">Wspólnik, Prezes Zarządu</span><a href="mailto:mariusz.bigaj@bfmprojekt.pl">mariusz.bigaj@bfmprojekt.pl</a></li>
+    <li><h3>Jacek Bujas</h3><span class="f">Wspólnik, Wiceprezes Zarządu</span><a href="mailto:jacek.bujas@bfmprojekt.pl">jacek.bujas@bfmprojekt.pl</a></li>
+    <li><h3>Mariusz Mistarz</h3><span class="f">Wspólnik, Wiceprezes Zarządu</span><a href="mailto:mariusz.mistarz@bfmprojekt.pl">mariusz.mistarz@bfmprojekt.pl</a></li>
+    <li><h3>Wojciech Fuliński</h3><span class="f">Wspólnik</span><a href="mailto:wojciech.fulinski@bfmprojekt.pl">wojciech.fulinski@bfmprojekt.pl</a></li>
+   </ul>
+   <div class="prawa">
+    <div class="biuro">
+     <div><span class="et">Sekretariat</span><a class="duzy" href="tel:+48126180860">+48 12 618 08 60</a></div>
+     <div><span class="et">E-mail</span><a href="mailto:sekretariat@bfmprojekt.pl">sekretariat@bfmprojekt.pl</a></div>
+     <div><span class="et">Adres</span><p>BFM Projekt Sp. z o.o.<br>ul. Wielicka 113/LU2, 30-552 Kraków</p></div>
+    </div>
+    <form class="form" id="form" novalidate>
+     <h3>Zapytanie o projekt</h3>
+     <label>Imię i nazwisko lub firma<input name="kto" autocomplete="name" required></label>
+     <label>E-mail lub telefon<input name="kontakt" autocomplete="email" required></label>
+     <label>Obiekt i zakres projektu<textarea name="opis" required></textarea></label>
+     <button class="btn" type="submit">Wyślij zapytanie</button>
+     <p class="msg" id="msg" hidden>To podgląd strony - formularz zacznie wysyłać wiadomości po wdrożeniu.</p>
+    </form>
+   </div>
+   <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Wielicka+113,+30-552+Krak%C3%B3w&amp;z=15&amp;output=embed">ul. Wielicka 113/LU2, 30-552 Kraków</div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="sgrid">
+   <div class="s1"><img src="img/logo-biale.webp" width="326" height="114" alt="BFM Projekt" loading="lazy"><p>Wielobranżowe biuro projektów instalacyjnych</p></div>
+   <div><p>BFM Projekt Sp. z o.o.<br>ul. Wielicka 113/LU2<br>30-552 Kraków</p></div>
+   <div><p><a href="tel:+48126180860">+48 12 618 08 60</a><br><a href="mailto:sekretariat@bfmprojekt.pl">sekretariat@<wbr>bfmprojekt.pl</a></p></div>
+   <div><p>KRS 0000266529<br>NIP 677-228-02-38<br>REGON 120350230</p></div>
+  </div>
+  <div class="sdol"><span>© 2026 BFM Projekt Sp. z o.o.</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bfmprojekt.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<dialog id="karta" aria-labelledby="dnz">
+ <div class="dk">
+  <div class="dgora"><h2 id="dnz"></h2><div class="dnav"><button type="button" class="np" data-k="-1" aria-label="Poprzedni obiekt">&#8592;<span> Poprzedni</span></button><button type="button" class="np" data-k="1" aria-label="Następny obiekt"><span>Następny </span>&#8594;</button><button type="button" class="zam" aria-label="Zamknij">Zamknij</button></div></div>
+  <div class="dsr"><div class="galeria" id="dgal"></div><div class="dtab"><dl id="ddl"></dl><p id="dile"></p></div></div>
+ </div>
+</dialog>
+
+<script>
+var OB=[{"n":"Quorum","c":"Wrocław","y":"od 2020","t":"Budynki biurowe i mieszkaniowe","z":"projekt wykonawczy","a":"100 000 m²","ar":"Cavatina","op":"","im":[["309-1",970,520],["309-2",970,520],["309-3",970,520]]},{"n":"WIMA","c":"Łódź","y":"od 2020","t":"Budynek biurowy","z":"projekt budowlany i wykonawczy","a":"33 000 m²","ar":"Cavatina","op":"","im":[["310-1",960,540],["310-2",960,540]]},{"n":"Aparthotel","c":"Mielno","y":"od 2020","t":"Budynek mieszkaniowy","z":"projekt budowlany i wykonawczy","a":"11 800 m²","ar":"AKE Studio","op":"","im":[["311-1",1400,875],["311-2",1400,875],["311-3",1400,875]]},{"n":"Holiday Inn Express","c":"Lublin","y":"od 2020","t":"Hotel","z":"projekt budowlany i wykonawczy","a":"8 940 m²","ar":"KM Rubaszkiewicz","op":"","im":[["312-1",800,494],["312-2",800,494]]},{"n":"Osiedle Link","c":"Kraków","y":"od 2020","t":"Budynki mieszkaniowe","z":"projekt budowlany i wykonawczy","a":"6 600 m²","ar":"CAVU Architekci","op":"","im":[["313-1",1365,767],["313-2",1360,729],["313-3",1364,746]]},{"n":"Global Office Park","c":"Katowice","y":"2020-2023","t":"Budynki biurowe i mieszkaniowe","z":"projekt budowlany i wykonawczy","a":"92 000 m²","ar":"Cavatina","op":"","im":[["314-1",970,520],["314-2",970,520],["314-3",970,520]]},{"n":"Oławska Tower","c":"Wrocław","y":"od 2020","t":"Budynek biurowo-usługowy","z":"projekt budowlany i wykonawczy","a":"17 000 m²","ar":"Artur Jasiński i Wspólnicy Biuro Architektoniczne","op":"","im":[["315-1",1020,681],["315-2",1020,1116],["315-3",1020,574]]},{"n":"Chmielna 89","c":"Warszawa","y":"2019-2020","t":"Budynek biurowy","z":"projekt przetargowy wielobranżowy i wykonawczy w zakresie instalacji hvac i wodkan","a":"37 000 m²","ar":"Cavatina","op":"","im":[["316-1",970,520],["316-2",970,520],["316-3",970,520]]},{"n":"Fabryka Kart","c":"Kraków","y":"2015-2020","t":"Budynek biurowy","z":"projekt budowlany i wykonawczy","a":"2 400 m²","ar":"Artur Jasiński i Wspólnicy Biuro Architektoniczne","op":"","im":[["317-1",1020,800],["317-2",1020,793],["317-3",1020,681]]},{"n":"Oknoplast","c":"Ochmanów k. Krakowa","y":"2015-2017","t":"Budynek biurowy","z":"projekt budowlany i wykonawczy","a":"2 000 m²","ar":"APA Zalewski Architekci","op":"","im":[["318-1",1400,933]]},{"n":"Metal Service Center","c":"Zabrze","y":"2018-2020","t":"Zakład produkcyjny","z":"projekt budowlany i wykonawczy","a":"12 000 m²","ar":"Bazukastudio","op":"","im":[["319-1",1400,739],["319-2",1400,739]]},{"n":"Equal Business Park","c":"Kraków","y":"2016-2018","t":"Budynek biurowy","z":"projekt budowlany","a":"30 000 m²","ar":"Cavatina","op":"","im":[["304-1",720,405],["304-2",720,405],["304-3",720,540],["304-4",720,540]]},{"n":"Carbon Tower","c":"Wrocław","y":"2016-2019","t":"Budynek biurowy","z":"projekt budowlany","a":"31 000 m²","ar":"Cavatina","op":"","im":[["306-1",540,720],["306-2",540,720],["306-3",720,540]]},{"n":"Diamentum Office","c":"Wrocław","y":"2016-2018","t":"Budynek biurowy","z":"projekt budowlany","a":"12 300 m²","ar":"Cavatina","op":"2018","im":[["305-1",720,540],["305-2",720,540]]},{"n":"Libero","c":"Katowice","y":"2015-2018","t":"Galeria handlowa","z":"projekt budowlany, projekt przetargowy","a":"105 000 m²","ar":"MOFO Architekci","op":"","im":[["301-1",1400,840]]},{"n":"Podium Park","c":"Kraków","y":"od 2015","t":"Budynek biurowy","z":"projekt budowlany","a":"95 000 m²","ar":"PRC Architekci","op":"","im":[["303-1",720,450],["303-2",720,450]]},{"n":"Imperial","c":"Kraków","y":"2016-2018","t":"Budynek biurowy","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"6 800 m²","ar":"Artur Jasiński i Wspólnicy","op":"2018","im":[["302-1",720,720],["302-2",720,432],["302-3",720,432]]},{"n":"Art City","c":"Kraków","y":"2014-2020","t":"Zespół mieszkaniowy","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"P1 - 10 000 m², L1 - 14 000 m², P2 - 11 500 m², P3 - 9 500 m²","ar":"Artur Jasiński i Wspólnicy","op":"","im":[["300-1",1020,612],["300-2",1020,612],["300-3",1020,617],["300-4",1020,612]]},{"n":"Comarch","c":"Kraków","y":"2015-2018","t":"Budynek biurowy","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"25 000 m²","ar":"Artur Jasiński i Wspólnicy","op":"2018","im":[["297-1",720,475],["297-2",720,475],["297-3",720,475]]},{"n":"Principio","c":"Kraków","y":"2014-2018","t":"Budynek biurowy","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"15 500 m²","ar":"Artur Jasiński i Wspólnicy","op":"2018","im":[["298-1",575,720],["298-2",720,238],["298-3",720,505]]},{"n":"Sąd Rejonowy","c":"Nowy Sącz","y":"2015-2018","t":"Budynek biurowy","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"10 000 m²","ar":"Artur Jasiński i Wspólnicy","op":"2018","im":[["299-1",720,432],["299-2",720,432]]},{"n":"Korona","c":"Kielce","y":"2010-2012","t":"Galeria handlowa","z":"projekt budowlany, projekt wykonawczy, nadzór autorski","a":"85 000 m²","ar":"BOSE International","op":"2012","im":[["282-1",720,480],["282-2",720,480]]},{"n":"Browar Lubicz","c":"Kraków","y":"2011-2014","t":"Zespół budynków biurowych, mieszkaniowych i usługowych","z":"projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór na budowie – etap A","a":"","ar":"MOFO Architekci","op":"2014","im":[["286-1",720,306],["286-2",720,479],["286-3",720,481]]},{"n":"Bonarka","c":"Kraków","y":"2007-2009","t":"Galeria handlowa","z":"projekt wykonawczy, nadzór autorski","a":"15 000 m²","ar":"BOSE International, IMB Asymetria","op":"2009","im":[["287-1",720,480],["287-2",720,361],["287-3",720,520]]},{"n":"Felicity","c":"Lublin","y":"2012-2014","t":"Galeria handlowa","z":"projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór autorski","a":"145 000 m²","ar":"MOFO Architekci","op":"2014","im":[["288-1",720,477],["288-2",720,477]]},{"n":"Millenium Hall","c":"Rzeszów","y":"2010-2012","t":"Galeria handlowa","z":"projekt budowlany zamienny, projekt wykonawczy, nadzór autorski","a":"100 000 m²","ar":"Studio Archi 5","op":"2011","im":[["289-1",720,482]]},{"n":"Gemini Park","c":"Tarnów","y":"2009-2010","t":"Galeria handlowa","z":"projekt budowlany zamienny, projekt wykonawczy, nadzór autorski","a":"78 000 m²","ar":"MOFO Architekci","op":"2010","im":[["290-1",720,299],["290-2",720,480]]},{"n":"Focus Park","c":"Piotrków Trybunalski","y":"2007-2009","t":"Galeria handlowa","z":"projekt budowlany, projekt przetargowy, nadzór autorski","a":"145 000 m²","ar":"MOFO Architekci","op":"2009","im":[["291-1",720,477]]},{"n":"TIM","c":"Siechnice (Wrocław)","y":"2007-2008","t":"Biurowiec i centrum logistyczne","z":"projekt budowlany, projekt przetargowy, projekt wykonawczy, nadzór autorski","a":"15 000 m²","ar":"APA Zalewski Bubak","op":"2008","im":[["292-1",940,627],["292-2",940,627],["292-3",940,597],["292-4",940,627]]},{"n":"Interkrąż","c":"Trzyciąż","y":"2011-2013","t":"Siedziba firmy i hala produkcyjna","z":"projekt budowlany, projekt wykonawczy","a":"9 000 m²","ar":"APA Zalewski Bubak","op":"2013","im":[["293-1",720,480],["293-2",720,321],["293-3",720,480]]},{"n":"Ekowtór","c":"Wilkowice","y":"","t":"Siedziba firmy oraz sortownia odpadów","z":"projekt budowlany, projekt wykonawczy","a":"4 200 m²","ar":"APA Zalewski Bubak","op":"","im":[["294-1",720,405],["294-2",720,400]]},{"n":"Prilesie","c":"Mińsk (Białoruś)","y":"","t":"Siedziba firmy i hala produkcyjna","z":"projekt budowlany, projekt wykonawczy","a":"25 000 m²","ar":"APA Zalewski Bubak","op":"2013","im":[["295-1",720,405],["295-2",720,405]]},{"n":"Tischnera Office","c":"Kraków","y":"2016-2020","t":"Budynek biurowy","z":"projekt budowlany","a":"55 000 m²","ar":"Cavatina","op":"","im":[["307-1",720,540],["307-2",720,540]]}];
+(function(){
+var b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+var s=document.getElementById('siatka'),p=document.getElementById('pokaz');
+p.addEventListener('click',function(){s.classList.add('wsz');p.parentNode.hidden=true});
+var d=document.getElementById('karta'),cur=0;
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function pokaz(i){cur=(i+OB.length)%OB.length;var o=OB[cur];
+ document.getElementById('dnz').textContent=o.n;
+ document.getElementById('dgal').innerHTML=o.im.map(function(x,j){return '<img src="img/o/'+x[0]+'.webp" width="'+x[1]+'" height="'+x[2]+'" alt="'+esc(o.n)+', '+esc(o.c)+' - zdjęcie '+(j+1)+'"'+(j?' loading="lazy"':'')+'>'}).join('');
+ var f=[['Miejscowość',o.c],['Lata',o.y],['Funkcja',o.t],['Zakres prac',o.z],['Powierzchnia',o.a],['Architekt',o.ar],['Otwarcie',o.op]];
+ document.getElementById('ddl').innerHTML=f.filter(function(x){return x[1]}).map(function(x){return '<dt>'+x[0]+'</dt><dd>'+esc(x[1])+'</dd>'}).join('');
+ var n=o.im.length;document.getElementById('dile').textContent=n>1?(n+(n<5?' zdjęcia':' zdjęć')+(matchMedia('(max-width:999px)').matches?' - przesuń palcem w bok':'')):'';document.getElementById('dgal').scrollTop=0;document.getElementById('dgal').scrollLeft=0}
+s.addEventListener('click',function(e){var k=e.target.closest('.karta');if(!k)return;pokaz(+k.dataset.i);d.showModal()});
+d.addEventListener('click',function(e){var t=e.target.closest('button');if(e.target===d){d.close();return}if(!t)return;if(t.classList.contains('zam'))d.close();else if(t.dataset.k)pokaz(cur+(+t.dataset.k))});
+d.addEventListener('keydown',function(e){if(e.key==='ArrowRight')pokaz(cur+1);if(e.key==='ArrowLeft')pokaz(cur-1)});
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('msg').hidden=false});
+var mp=document.getElementById('mapa');
+function laduj(){if(mp.dataset.ok)return;mp.dataset.ok=1;mp.innerHTML='<iframe src="'+mp.dataset.src+'" title="Mapa dojazdu - ul. Wielicka 113, Kraków" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){laduj();io.disconnect()}},{rootMargin:'400px'});io.observe(mp)}else laduj();
+})();
+</script>
+</body>
+</html>
