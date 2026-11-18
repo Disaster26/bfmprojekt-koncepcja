@@ -14,7 +14,7 @@ for i,o in enumerate(ob):
     ims=[[f"{o['id']}-{j}",*wy[f"{o['id']}-{j}"]] for j in range(1,o['n']+1)]
     data.append(dict(n=o['name'],c=o['city'],y=o['years'],t=typ,z=o['scope'],a=m2(o['area']),ar=ARCH.get(o['arch'],o['arch']),op=o['opened'],im=ims))
     k=o['id']
-    cards.append(f'''   <li><button class="karta" type="button" data-i="{i}" aria-haspopup="dialog"><span class="foto"><img src="img/k/{k}-480.webp" srcset="img/k/{k}-480.webp 480w, img/k/{k}-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="{E(o['name'])}, {E(o['city'])}"></span><span class="tab"><span class="nz">{E(o['name'])}</span><span class="mt"><span>{E(o['city'])}</span><span>{E(o['years'] or '-')}</span></span></span></button></li>''')
+    cards.append(f'''   <li><button class="karta" type="button" data-i="{i}" aria-haspopup="dialog"><span class="foto"><img src="img/k/{k}-480.webp" srcset="img/k/{k}-320.webp 320w, img/k/{k}-480.webp 480w, img/k/{k}-800.webp 800w" sizes="(min-width:2400px) 15vw, (min-width:1800px) 18vw, (min-width:1200px) 22vw, (min-width:760px) 30vw, 46vw" width="800" height="600" loading="lazy" decoding="async" alt="{E(o['name'])}, {E(o['city'])}"></span><span class="tab"><span class="nz">{E(o['name'])}</span><span class="mt"><span>{E(o['city'])}</span><span>{E(o['years'] or '-')}</span></span></span></button></li>''')
 lis=[]
 for x in li:
     nm=x['nazwa']; typ=x.get('typ','')
